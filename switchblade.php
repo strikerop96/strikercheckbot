@@ -12,7 +12,7 @@ error_reporting(0);
 $update = file_get_contents('php://input');
 $update = json_decode($update, TRUE);
 $print = print_r($update);
-$chatId = $update["message"]["chat"]["1199245722"];
+$chatId = $update["message"]["chat"]["id"];
 $gId = $update["message"]["from"]["id"];
 $userId = $update["message"]["from"]["id"];
 $firstname = $update["message"]["from"]["first_name"];
@@ -220,11 +220,11 @@ $postcode = $matches1[1][0];
 
 // Proxy Configuration
 $rp1 = array(
-    1 => '45.140.13.119:9132',
-    2 => '45.140.13.112:9125',
-    3 => '45.140.13.124:9137',
-    4 => '45.142.28.83:8094',
-    5 => '45.136.231.85:7141',
+    1 => 'kwnszuaa-rotate:nbv7p37iwa7t@p.webshare.io:80',
+    2 => 'kwnszuaa-rotate:nbv7p37iwa7t@p.webshare.io:80',
+    3 => 'kwnszuaa-rotate:nbv7p37iwa7t@p.webshare.io:80',
+    4 => 'kwnszuaa-rotate:nbv7p37iwa7t@p.webshare.io:80',
+    5 => 'kwnszuaa-rotate:nbv7p37iwa7t@p.webshare.io:80',
     ); 
     $rpt = array_rand($rp1);
     $rotate = $rp1[$rpt];
