@@ -12,7 +12,7 @@ error_reporting(0);
 $update = file_get_contents('php://input');
 $update = json_decode($update, TRUE);
 $print = print_r($update);
-$chatId = $update["message"]["chat"]["id"];
+$chatId = $update["message"]["chat"]["1199245722"];
 $gId = $update["message"]["from"]["id"];
 $userId = $update["message"]["from"]["id"];
 $firstname = $update["message"]["from"]["first_name"];
